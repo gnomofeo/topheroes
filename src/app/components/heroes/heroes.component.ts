@@ -2,12 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import{HeroesService} from 'src/app/service/heroes.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-heroes',
+  templateUrl: './heroes.component.html',
+  styleUrls: ['./heroes.component.css']
 })
-export class AppComponent implements OnInit {
-  title = 'practicaTourHeroes';
+export class HeroesComponent implements OnInit {
+
   heroes: import("c:/Users/victo/practicaTourHeroes/src/app/service/heroes.service").Heroes[];
   
 
@@ -19,4 +19,5 @@ console.log();
 
   ngOnInit(): void {
   }
+
 }
